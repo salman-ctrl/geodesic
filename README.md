@@ -4,7 +4,7 @@
 
 **NASA Space Apps Challenge 2026 · Challenge: Space Mission Design Game**
 
-🔗 **Play:** `<your-deployed-url>` · 🎬 **Demo video:** `<video-url>`
+🔗 **Play:** `<your-deployed-url>` · 🎬 **Demo video:** `<https://youtu.be/ksskKUELBc8>`
 
 ---
 
