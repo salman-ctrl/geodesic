@@ -4,7 +4,7 @@
 
 **NASA Space Apps Challenge 2026 · Challenge: Space Mission Design Game**
 
-🔗 Play: <https://geodesic-game.vercel.app/> 🎬Demo video: <https://youtu.be/ksskKUELBc8>`
+🔗 Play: <https://geodesic-game.vercel.app/> 🎬Demo video: <https://youtu.be/ksskKUELBc8>
 
 ---
 
