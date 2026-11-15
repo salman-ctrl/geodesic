@@ -1,0 +1,14 @@
+{
+  "browser": "157.0.8103.51",
+  "backend": "Existing Express app, repository, validation and scoring; injected SQL fixture, not real MySQL.",
+  "checks": [
+    "Room creation and two teams joining from three isolated browser contexts",
+    "Native Moon flight report submitted; all six leaderboard tabs and server-owned score displayed",
+    "Failed flights require a lesson, have no Mission Score, and appear in the failure tab",
+    "Database-down fallback, cached leaderboard, persisted team and queued report after reload, one idempotent upload after reconnect",
+    "Built production app: local create/join, reload persistence, report submission, and explicit refusal to imply cross-device local rooms",
+    "Mobile classroom width and accessible keyboard tab navigation"
+  ],
+  "errors": [],
+  "passed": true
+}

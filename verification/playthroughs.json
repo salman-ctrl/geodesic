@@ -1,0 +1,1599 @@
+{
+  "browser": "157.0.8103.51",
+  "timing": "Native browser rAF and original dt limits. Default cruise warp 10; ascent autopilot and assisted descent are original UI controls. No clock overrides, frame injection, skipped phases or 100× cruise.",
+  "missions": [
+    {
+      "mission": "moon",
+      "name": "react",
+      "startedAt": "2026-11-15T06:47:08.995Z",
+      "events": [
+        {
+          "screen": "gonogo",
+          "elapsedSeconds": 1.16
+        },
+        {
+          "screen": "launch",
+          "elapsedSeconds": 12.21
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 72.82
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "tcm",
+          "miss": 3249.397003916603,
+          "need": 0.005012564694021051
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "enc",
+          "miss": 101.20597988089175,
+          "need": 0.002430972891163697
+        },
+        {
+          "screen": "arrival",
+          "elapsedSeconds": 84.12
+        },
+        {
+          "action": "capture-burn",
+          "position": 0.49793333333333334
+        },
+        {
+          "screen": "descent",
+          "elapsedSeconds": 92.16
+        },
+        {
+          "screen": "report",
+          "elapsedSeconds": 127.11
+        }
+      ],
+      "errors": [],
+      "finishedAt": "2026-11-15T06:49:16.235Z",
+      "elapsedSeconds": 127.24,
+      "result": {
+        "mission": "moon",
+        "rt": {
+          "ok": true,
+          "chain": [
+            "earth",
+            "moon"
+          ],
+          "t0": 10226.5,
+          "tofs": [
+            4
+          ],
+          "legs": [
+            {
+              "from": "earth",
+              "to": "moon",
+              "t0": 10226.5,
+              "tof": 4,
+              "frame": "geo",
+              "r0": [
+                -6085.555116597855,
+                -2497.5798913385465,
+                0
+              ],
+              "v0": [
+                358187.6481982196,
+                -872753.1330445677,
+                0
+              ],
+              "rEnd": [
+                362496.1045271574,
+                127905.95843289213,
+                0
+              ]
+            }
+          ],
+          "flybys": [],
+          "vinfDep": 0,
+          "c3": -1.9662614729963641,
+          "dvDep": 3.134675950101199,
+          "dvFly": 0,
+          "vinfArr": 0.8740812742892077,
+          "dvCap": 0.8364532653082175,
+          "dvTotal": 3.971129215409417,
+          "days": 4,
+          "years": 0.010951403148528405,
+          "frame": "geo",
+          "hohmannDays": 4.9779549065276845
+        },
+        "dry": 812,
+        "prop": 190.7375386723611,
+        "prop0": 500,
+        "pts": 65,
+        "hasProbe": true,
+        "cost": {
+          "rocket": 144.5,
+          "craft": 180,
+          "ops": 0.06570841889117043,
+          "total": 324.5657084188912
+        },
+        "rocket": {
+          "segs": 3,
+          "engines": 3,
+          "boosters": 2,
+          "upper": "S",
+          "fairing": "S"
+        },
+        "craft": {
+          "bus": "S",
+          "power": "solar",
+          "powerN": 1,
+          "antenna": "S",
+          "instruments": [
+            "spec",
+            "probe"
+          ],
+          "tank": 1
+        },
+        "burns": [
+          {
+            "t": 10226.5,
+            "label": "Departure burn (upper stage)",
+            "dv": 3.134675950101199,
+            "free": true
+          },
+          {
+            "t": 10230.02,
+            "label": "Course corrections, Earth → Moon",
+            "dv": 0.007098399999999966
+          },
+          {
+            "t": 10230.5,
+            "label": "Capture burn at Moon",
+            "dv": 0.8364896921779701
+          }
+        ],
+        "notes": [],
+        "used": {
+          "tcm": 0.007098399999999966,
+          "fly": 0,
+          "cap": 0.8364896921779701
+        },
+        "gains": [],
+        "launch": {
+          "status": "orbit",
+          "dvLeft": 3.32073476279339,
+          "need": 3.134675950101199,
+          "kickV": 20.240356768373406,
+          "band": [
+            20,
+            27
+          ],
+          "maxQ": 49455.1210629725,
+          "events": [
+            {
+              "t": 1.7500000000000009,
+              "e": "Liftoff",
+              "note": ""
+            },
+            {
+              "t": 4.94999999999999,
+              "e": "Gravity turn",
+              "note": "20 m/s"
+            },
+            {
+              "t": 100.14999999999645,
+              "e": "Booster separation",
+              "note": ""
+            },
+            {
+              "t": 188.55000000000862,
+              "e": "Fairing jettison",
+              "note": "110 km"
+            },
+            {
+              "t": 195.30000000001016,
+              "e": "Stage separation",
+              "note": ""
+            },
+            {
+              "t": 333.2500000000415,
+              "e": "Orbit insertion",
+              "note": "142 × 185 km"
+            }
+          ],
+          "auto": true,
+          "t": 333.2500000000415
+        },
+        "outcome": {
+          "ok": true,
+          "phase": "done",
+          "title": "Landed on the Moon",
+          "why": "Touchdown at 1.8 m/s. The orbiter is overhead relaying data, and the lander is on the surface after 4.0 days of flight."
+        },
+        "landing": {
+          "status": "landed",
+          "v": 1.8297248603029868,
+          "fuel": 0.47257203082953425,
+          "assist": true,
+          "t": 31.274999999998865
+        },
+        "t": 10230.5,
+        "capture": {
+          "result": "orbit",
+          "tb": 11.381661979696219,
+          "tau": 743.899475796779,
+          "need": 0.8364896921779701,
+          "best": 0.8364532653082175,
+          "have": 1.4985993562528792
+        }
+      },
+      "passed": true
+    },
+    {
+      "mission": "moon",
+      "name": "source",
+      "startedAt": "2026-11-15T06:47:09.152Z",
+      "events": [
+        {
+          "screen": "gonogo",
+          "elapsedSeconds": 1.2
+        },
+        {
+          "screen": "launch",
+          "elapsedSeconds": 12.24
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 72.68
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "tcm",
+          "miss": 1378.8888121631617,
+          "need": 0.002687204236978747
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "enc",
+          "miss": 92.00744251726259,
+          "need": 0.0022116844148443514
+        },
+        {
+          "screen": "arrival",
+          "elapsedSeconds": 83.38
+        },
+        {
+          "action": "capture-burn",
+          "position": 0.49575
+        },
+        {
+          "screen": "descent",
+          "elapsedSeconds": 91.53
+        },
+        {
+          "screen": "report",
+          "elapsedSeconds": 126.57
+        }
+      ],
+      "errors": [],
+      "finishedAt": "2026-11-15T06:49:15.824Z",
+      "elapsedSeconds": 126.672,
+      "result": {
+        "mission": "moon",
+        "rt": {
+          "ok": true,
+          "chain": [
+            "earth",
+            "moon"
+          ],
+          "t0": 10226.5,
+          "tofs": [
+            4
+          ],
+          "legs": [
+            {
+              "from": "earth",
+              "to": "moon",
+              "t0": 10226.5,
+              "tof": 4,
+              "frame": "geo",
+              "r0": [
+                -6085.555116597855,
+                -2497.5798913385465,
+                0
+              ],
+              "v0": [
+                358187.6481982196,
+                -872753.1330445677,
+                0
+              ],
+              "rEnd": [
+                362496.1045271574,
+                127905.95843289213,
+                0
+              ]
+            }
+          ],
+          "flybys": [],
+          "vinfDep": 0,
+          "c3": -1.9662614729963641,
+          "dvDep": 3.134675950101199,
+          "dvFly": 0,
+          "vinfArr": 0.8740812742892077,
+          "dvCap": 0.8364532653082175,
+          "dvTotal": 3.971129215409417,
+          "days": 4,
+          "years": 0.010951403148528405,
+          "frame": "geo",
+          "hohmannDays": 4.9779549065276845
+        },
+        "dry": 812,
+        "prop": 191.56267545093294,
+        "prop0": 500,
+        "pts": 65,
+        "hasProbe": true,
+        "cost": {
+          "rocket": 144.5,
+          "craft": 180,
+          "ops": 0.06570841889117043,
+          "total": 324.5657084188912
+        },
+        "rocket": {
+          "segs": 3,
+          "engines": 3,
+          "boosters": 2,
+          "upper": "S",
+          "fairing": "S"
+        },
+        "craft": {
+          "bus": "S",
+          "power": "solar",
+          "powerN": 1,
+          "antenna": "S",
+          "instruments": [
+            "spec",
+            "probe"
+          ],
+          "tank": 1
+        },
+        "burns": [
+          {
+            "t": 10226.5,
+            "label": "Departure burn (upper stage)",
+            "dv": 3.134675950101199,
+            "free": true
+          },
+          {
+            "t": 10230.02,
+            "label": "Course corrections, Earth → Moon",
+            "dv": 0.004534399999999962
+          },
+          {
+            "t": 10230.5,
+            "label": "Capture burn at Moon",
+            "dv": 0.836472438428971
+          }
+        ],
+        "notes": [],
+        "used": {
+          "tcm": 0.004534399999999962,
+          "fly": 0,
+          "cap": 0.836472438428971
+        },
+        "gains": [],
+        "launch": {
+          "status": "orbit",
+          "dvLeft": 3.32073476279339,
+          "need": 3.134675950101199,
+          "kickV": 20.240356768373406,
+          "band": [
+            20,
+            27
+          ],
+          "maxQ": 49455.1210629725,
+          "events": [
+            {
+              "t": 1.7500000000000009,
+              "e": "Liftoff",
+              "note": ""
+            },
+            {
+              "t": 4.94999999999999,
+              "e": "Gravity turn",
+              "note": "20 m/s"
+            },
+            {
+              "t": 100.14999999999645,
+              "e": "Booster separation",
+              "note": ""
+            },
+            {
+              "t": 188.55000000000862,
+              "e": "Fairing jettison",
+              "note": "110 km"
+            },
+            {
+              "t": 195.30000000001016,
+              "e": "Stage separation",
+              "note": ""
+            },
+            {
+              "t": 333.2500000000415,
+              "e": "Orbit insertion",
+              "note": "142 × 185 km"
+            }
+          ],
+          "auto": true,
+          "t": 333.2500000000415
+        },
+        "outcome": {
+          "ok": true,
+          "phase": "done",
+          "title": "Landed on the Moon",
+          "why": "Touchdown at 1.8 m/s. The orbiter is overhead relaying data, and the lander is on the surface after 4.0 days of flight."
+        },
+        "landing": {
+          "status": "landed",
+          "v": 1.8297248603029868,
+          "fuel": 0.47257203082953425,
+          "assist": true,
+          "t": 31.274999999998865
+        },
+        "t": 10230.5,
+        "capture": {
+          "result": "orbit",
+          "tb": -8.25728418134804,
+          "tau": 743.899475796779,
+          "need": 0.836472438428971,
+          "best": 0.8364532653082175,
+          "have": 1.5011633562528777
+        }
+      },
+      "passed": true
+    },
+    {
+      "mission": "mars",
+      "name": "react",
+      "startedAt": "2026-11-15T06:49:17.409Z",
+      "events": [
+        {
+          "screen": "gonogo",
+          "elapsedSeconds": 1.32
+        },
+        {
+          "screen": "launch",
+          "elapsedSeconds": 12.38
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 74.52
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "tcm",
+          "miss": 1119295.500665069,
+          "need": 0.012462645030968984
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "enc",
+          "miss": 17577.591342846183,
+          "need": 0.005465692568460636
+        },
+        {
+          "screen": "arrival",
+          "elapsedSeconds": 106.32
+        },
+        {
+          "action": "capture-burn",
+          "position": 0.500141666666666
+        },
+        {
+          "screen": "descent",
+          "elapsedSeconds": 114.46
+        },
+        {
+          "screen": "report",
+          "elapsedSeconds": 142.93
+        }
+      ],
+      "errors": [],
+      "finishedAt": "2026-11-15T06:51:40.471Z",
+      "elapsedSeconds": 143.062,
+      "result": {
+        "mission": "mars",
+        "rt": {
+          "ok": true,
+          "chain": [
+            "earth",
+            "mars"
+          ],
+          "t0": 15278.5,
+          "tofs": [
+            309.77258952957806
+          ],
+          "legs": [
+            {
+              "from": "earth",
+              "to": "mars",
+              "t0": 15278.5,
+              "tof": 309.77258952957806,
+              "r0": [
+                0.7892167141484921,
+                0.6024998720421234,
+                -0.00005710961800726637
+              ],
+              "frame": "helio",
+              "res": false,
+              "v0": [
+                -0.011317927750731612,
+                0.015406511270533772,
+                0.00016427022316998168
+              ],
+              "v1": [
+                0.010695118343401288,
+                -0.006234050357045578,
+                -0.00009864612874720431
+              ],
+              "rEnd": [
+                -0.9146042513252841,
+                -1.24135487212086,
+                -0.003625604996425703
+              ]
+            }
+          ],
+          "flybys": [],
+          "vinfDep": 3.2910756352782045,
+          "vinfDepVec": [
+            -1.0362332596766173,
+            3.1105024079144243,
+            0.2866604943489385
+          ],
+          "c3": 10.831178837121836,
+          "dvDep": 3.705761783937943,
+          "dvFly": 0,
+          "vinfArr": 2.4882972822742464,
+          "vinfArrVec": [
+            -1.8963714074481124,
+            1.5003542345407774,
+            0.5868015174505113
+          ],
+          "dvCap": 0.7805121494876381,
+          "dvTotal": 4.486273933425581,
+          "days": 309.7725895295789,
+          "years": 0.8481111280755069,
+          "frame": "helio",
+          "cost": 4.571085046233132
+        },
+        "dry": 855,
+        "prop": 195.6720832894905,
+        "prop0": 500,
+        "pts": 70,
+        "hasProbe": true,
+        "cost": {
+          "rocket": 175,
+          "craft": 199,
+          "ops": 5.0886667684530416,
+          "total": 379.08866676845304
+        },
+        "rocket": {
+          "segs": 4,
+          "engines": 4,
+          "boosters": 2,
+          "upper": "M",
+          "fairing": "S"
+        },
+        "craft": {
+          "bus": "S",
+          "power": "solar",
+          "powerN": 1,
+          "antenna": "M",
+          "instruments": [
+            "radar",
+            "probe"
+          ],
+          "tank": 1
+        },
+        "burns": [
+          {
+            "t": 15278.5,
+            "label": "Departure burn (upper stage)",
+            "dv": 3.705761783937943,
+            "free": true
+          },
+          {
+            "t": 15551.099878786028,
+            "label": "Course corrections, Earth → Mars",
+            "dv": 0.01754679456430729
+          },
+          {
+            "t": 15588.272589529579,
+            "label": "Capture burn at Mars",
+            "dv": 0.7807032671369072
+          }
+        ],
+        "notes": [],
+        "used": {
+          "tcm": 0.01754679456430729,
+          "fly": 0,
+          "cap": 0.7807032671369072
+        },
+        "gains": [],
+        "launch": {
+          "status": "orbit",
+          "dvLeft": 3.9005849834802135,
+          "need": 3.705761783937943,
+          "kickV": 27.015118477764545,
+          "band": [
+            27,
+            35
+          ],
+          "maxQ": 45871.59747484256,
+          "events": [
+            {
+              "t": 1.7500000000000009,
+              "e": "Liftoff",
+              "note": ""
+            },
+            {
+              "t": 6.649999999999984,
+              "e": "Gravity turn",
+              "note": "27 m/s"
+            },
+            {
+              "t": 100.14999999999645,
+              "e": "Booster separation",
+              "note": ""
+            },
+            {
+              "t": 195.30000000001016,
+              "e": "Stage separation",
+              "note": ""
+            },
+            {
+              "t": 206.1000000000126,
+              "e": "Fairing jettison",
+              "note": "110 km"
+            },
+            {
+              "t": 347.55000000004475,
+              "e": "Orbit insertion",
+              "note": "141 × 188 km"
+            }
+          ],
+          "auto": true,
+          "t": 347.55000000004475
+        },
+        "outcome": {
+          "ok": true,
+          "phase": "done",
+          "title": "Landed on Mars",
+          "why": "Touchdown at 1.5 m/s. The orbiter is overhead relaying data, and the lander is on the surface after 10 months of flight."
+        },
+        "landing": {
+          "status": "landed",
+          "v": 1.5001390925994533,
+          "fuel": 0.4782183760362758,
+          "assist": true,
+          "t": 24.666666666665908
+        },
+        "t": 15588.272589529579,
+        "capture": {
+          "result": "orbit",
+          "tb": 28.579047513031583,
+          "tau": 682.0775062775073,
+          "need": 0.7807032671369072,
+          "best": 0.7805121494876381,
+          "have": 1.4274207633246687
+        }
+      },
+      "passed": true
+    },
+    {
+      "mission": "mars",
+      "name": "source",
+      "startedAt": "2026-11-15T06:49:17.987Z",
+      "events": [
+        {
+          "screen": "gonogo",
+          "elapsedSeconds": 1.26
+        },
+        {
+          "screen": "launch",
+          "elapsedSeconds": 12.28
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 74.52
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "tcm",
+          "miss": 1685529.8881613098,
+          "need": 0.02345229219270087
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "enc",
+          "miss": 6006.507114912527,
+          "need": 0.0018775913780463532
+        },
+        {
+          "screen": "arrival",
+          "elapsedSeconds": 105.36
+        },
+        {
+          "action": "capture-burn",
+          "position": 0.49682499999999963
+        },
+        {
+          "screen": "descent",
+          "elapsedSeconds": 113.23
+        },
+        {
+          "screen": "report",
+          "elapsedSeconds": 141.58
+        }
+      ],
+      "errors": [],
+      "finishedAt": "2026-11-15T06:51:39.661Z",
+      "elapsedSeconds": 141.673,
+      "result": {
+        "mission": "mars",
+        "rt": {
+          "ok": true,
+          "chain": [
+            "earth",
+            "mars"
+          ],
+          "t0": 15278.5,
+          "tofs": [
+            309.77258952957806
+          ],
+          "legs": [
+            {
+              "from": "earth",
+              "to": "mars",
+              "t0": 15278.5,
+              "tof": 309.77258952957806,
+              "r0": [
+                0.7892167141484921,
+                0.6024998720421234,
+                -0.00005710961800726637
+              ],
+              "frame": "helio",
+              "res": false,
+              "v0": [
+                -0.011317927750731612,
+                0.015406511270533772,
+                0.00016427022316998168
+              ],
+              "v1": [
+                0.010695118343401288,
+                -0.006234050357045578,
+                -0.00009864612874720431
+              ],
+              "rEnd": [
+                -0.9146042513252841,
+                -1.24135487212086,
+                -0.003625604996425703
+              ]
+            }
+          ],
+          "flybys": [],
+          "vinfDep": 3.2910756352782045,
+          "vinfDepVec": [
+            -1.0362332596766173,
+            3.1105024079144243,
+            0.2866604943489385
+          ],
+          "c3": 10.831178837121836,
+          "dvDep": 3.705761783937943,
+          "dvFly": 0,
+          "vinfArr": 2.4882972822742464,
+          "vinfArrVec": [
+            -1.8963714074481124,
+            1.5003542345407774,
+            0.5868015174505113
+          ],
+          "dvCap": 0.7805121494876381,
+          "dvTotal": 4.486273933425581,
+          "days": 309.7725895295789,
+          "years": 0.8481111280755069,
+          "frame": "helio",
+          "cost": 4.571085046233132
+        },
+        "dry": 855,
+        "prop": 193.21815326484898,
+        "prop0": 500,
+        "pts": 70,
+        "hasProbe": true,
+        "cost": {
+          "rocket": 175,
+          "craft": 199,
+          "ops": 5.0886667684530416,
+          "total": 379.08866676845304
+        },
+        "rocket": {
+          "segs": 4,
+          "engines": 4,
+          "boosters": 2,
+          "upper": "M",
+          "fairing": "S"
+        },
+        "craft": {
+          "bus": "S",
+          "power": "solar",
+          "powerN": 1,
+          "antenna": "M",
+          "instruments": [
+            "radar",
+            "probe"
+          ],
+          "tank": 1
+        },
+        "burns": [
+          {
+            "t": 15278.5,
+            "label": "Departure burn (upper stage)",
+            "dv": 3.705761783937943,
+            "free": true
+          },
+          {
+            "t": 15551.099878786028,
+            "label": "Course corrections, Earth → Mars",
+            "dv": 0.025075484771033853
+          },
+          {
+            "t": 15588.272589529579,
+            "label": "Capture burn at Mars",
+            "dv": 0.7805125023681461
+          }
+        ],
+        "notes": [],
+        "used": {
+          "tcm": 0.025075484771033853,
+          "fly": 0,
+          "cap": 0.7805125023681461
+        },
+        "gains": [],
+        "launch": {
+          "status": "orbit",
+          "dvLeft": 3.9005849834802135,
+          "need": 3.705761783937943,
+          "kickV": 27.015118477764545,
+          "band": [
+            27,
+            35
+          ],
+          "maxQ": 45871.59747484256,
+          "events": [
+            {
+              "t": 1.7500000000000009,
+              "e": "Liftoff",
+              "note": ""
+            },
+            {
+              "t": 6.649999999999984,
+              "e": "Gravity turn",
+              "note": "27 m/s"
+            },
+            {
+              "t": 100.14999999999645,
+              "e": "Booster separation",
+              "note": ""
+            },
+            {
+              "t": 195.30000000001016,
+              "e": "Stage separation",
+              "note": ""
+            },
+            {
+              "t": 206.1000000000126,
+              "e": "Fairing jettison",
+              "note": "110 km"
+            },
+            {
+              "t": 347.55000000004475,
+              "e": "Orbit insertion",
+              "note": "141 × 188 km"
+            }
+          ],
+          "auto": true,
+          "t": 347.55000000004475
+        },
+        "outcome": {
+          "ok": true,
+          "phase": "done",
+          "title": "Landed on Mars",
+          "why": "Touchdown at 1.5 m/s. The orbiter is overhead relaying data, and the lander is on the surface after 10 months of flight."
+        },
+        "landing": {
+          "status": "landed",
+          "v": 1.5001390925994533,
+          "fuel": 0.4782183760362758,
+          "assist": true,
+          "t": 24.666666666665908
+        },
+        "t": 15588.272589529579,
+        "capture": {
+          "result": "orbit",
+          "tb": 1.2277395113028433,
+          "tau": 682.0775062775073,
+          "need": 0.7805125023681461,
+          "best": 0.7805121494876381,
+          "have": 1.4198920731179425
+        }
+      },
+      "passed": true
+    },
+    {
+      "mission": "jupiter",
+      "name": "react",
+      "startedAt": "2026-11-15T06:51:41.105Z",
+      "events": [
+        {
+          "screen": "gonogo",
+          "elapsedSeconds": 1.25
+        },
+        {
+          "screen": "launch",
+          "elapsedSeconds": 12.32
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 88.42
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "tcm",
+          "miss": 342780.0115125867,
+          "need": 0.02335149257903664
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "enc",
+          "miss": 1222.387947835374,
+          "need": 0.0010627050559334438
+        },
+        {
+          "screen": "flyby",
+          "elapsedSeconds": 101.6
+        },
+        {
+          "action": "aim-planned-flyby"
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 112.53
+        },
+        {
+          "action": "correction-window",
+          "leg": 1,
+          "type": "enc",
+          "miss": 0.0003801765749076223,
+          "need": 2.991875800314868e-11
+        },
+        {
+          "screen": "arrival",
+          "elapsedSeconds": 180.26
+        },
+        {
+          "action": "capture-burn",
+          "position": 0.49685833333333296
+        },
+        {
+          "screen": "report",
+          "elapsedSeconds": 188.29
+        }
+      ],
+      "errors": [],
+      "finishedAt": "2026-11-15T06:54:49.535Z",
+      "elapsedSeconds": 188.429,
+      "result": {
+        "mission": "jupiter",
+        "rt": {
+          "ok": true,
+          "chain": [
+            "earth",
+            "mars",
+            "jupiter"
+          ],
+          "t0": 11347,
+          "tofs": [
+            110.7477757671918,
+            761.700417605766
+          ],
+          "legs": [
+            {
+              "from": "earth",
+              "to": "mars",
+              "t0": 11347,
+              "tof": 110.7477757671918,
+              "r0": [
+                -0.562900114220869,
+                0.8076622427237008,
+                -0.000056912334045482126
+              ],
+              "frame": "helio",
+              "res": false,
+              "v0": [
+                -0.01671147430411947,
+                -0.013938826357094418,
+                0.000002595176786968551
+              ],
+              "v1": [
+                0.005165251107838984,
+                -0.015062471594503758,
+                0.0000013868664462403086
+              ],
+              "rEnd": [
+                -1.0136510247351513,
+                -1.176187540653146,
+                0.0001947854426413606
+              ]
+            },
+            {
+              "from": "mars",
+              "to": "jupiter",
+              "t0": 11457.747775767191,
+              "tof": 761.700417605766,
+              "r0": [
+                -1.013651024735205,
+                -1.1761875406529931,
+                0.0001947854426413466
+              ],
+              "frame": "helio",
+              "res": false,
+              "v0": [
+                0.005947442673039076,
+                -0.015818871800512797,
+                -0.00023904076521503014
+              ],
+              "v1": [
+                0.003481447019628268,
+                0.003163157750255829,
+                -0.000009847044862848487
+              ],
+              "rEnd": [
+                4.149668053059004,
+                -2.8448139129102814,
+                -0.0810029298893549
+              ]
+            }
+          ],
+          "flybys": [
+            {
+              "rp": 3596.2,
+              "rpMin": 3596.2,
+              "delta": 0.11819727320216789,
+              "dMax": 0.0866778685546987,
+              "vi": 16.10266539229207,
+              "vo": 16.332480275710346,
+              "dv": 0.5773651640679806,
+              "naturalTurn": 0.0866778685546987,
+              "poweredTurn": 0.03151940464746919,
+              "free": false,
+              "body": "mars",
+              "t": 11457.747775767191,
+              "vin": [
+                -10.319264477928073,
+                -12.338035165284003,
+                0.7625625422927598
+              ],
+              "vout": [
+                -8.964933544670737,
+                -13.647709473339484,
+                0.34627247569588526
+              ],
+              "vPlanet": [
+                19.26267382241335,
+                -13.741984256209003,
+                -0.7601612429026807
+              ],
+              "gain": 1.6936309977124857
+            }
+          ],
+          "vinfDep": 8.05904887070477,
+          "vinfDepVec": [
+            -4.0117311087152485,
+            -6.98958306471089,
+            0.0032853129055422157
+          ],
+          "c3": 64.94826870040782,
+          "dvDep": 5.858968464282494,
+          "dvFly": 0.5773651640679806,
+          "vinfArr": 6.040583933384564,
+          "vinfArrVec": [
+            -1.1989105214195046,
+            -5.9172938052946185,
+            0.1920985156508884
+          ],
+          "dvCap": 0.5829374994576639,
+          "dvTotal": 7.019271127808139,
+          "days": 872.4481933729567,
+          "years": 2.388632972958129,
+          "frame": "helio",
+          "cost": 7.258134425103952
+        },
+        "dry": 633,
+        "prop": 143.7951601157249,
+        "prop0": 500,
+        "pts": 40,
+        "hasProbe": false,
+        "cost": {
+          "rocket": 284,
+          "craft": 121,
+          "ops": 14.331797837748773,
+          "total": 419.33179783774875
+        },
+        "rocket": {
+          "segs": 5,
+          "engines": 4,
+          "boosters": 2,
+          "upper": "L",
+          "fairing": "S"
+        },
+        "craft": {
+          "bus": "S",
+          "power": "solar",
+          "powerN": 2,
+          "antenna": "M",
+          "instruments": [
+            "mag",
+            "spec"
+          ],
+          "tank": 1
+        },
+        "burns": [
+          {
+            "t": 11347,
+            "label": "Departure burn (upper stage)",
+            "dv": 5.858968464282494,
+            "free": true
+          },
+          {
+            "t": 11444.458042675129,
+            "label": "Course corrections, Earth → Mars",
+            "dv": 0.024175844507992362
+          },
+          {
+            "t": 11457.747775767191,
+            "label": "Powered flyby at Mars",
+            "dv": 0.5773651640679806
+          },
+          {
+            "t": 11457.747775767191,
+            "label": "Mars gravity-only speed gain +1.17 km/s",
+            "dv": 0,
+            "free": true,
+            "gain": 1.166611083953022
+          },
+          {
+            "t": 12219.448193372957,
+            "label": "Capture burn at Jupiter",
+            "dv": 0.5829377938439606
+          }
+        ],
+        "notes": [],
+        "used": {
+          "tcm": 0.024175844507992362,
+          "fly": 0.5773651640679806,
+          "cap": 0.5829377938439606
+        },
+        "gains": [
+          {
+            "body": "mars",
+            "gain": 1.6936309977124715,
+            "rp": 3596.2,
+            "turn": 0.11819727320216789,
+            "fix": 1.9708335031049848e-14,
+            "required": 0.5773651640679806,
+            "applied": 0.5773651640679806,
+            "extra": 0
+          }
+        ],
+        "launch": {
+          "status": "orbit",
+          "dvLeft": 6.014384420747328,
+          "need": 5.858968464282494,
+          "kickV": 55.07688529613581,
+          "band": [
+            55,
+            80
+          ],
+          "maxQ": 30181.75339270222,
+          "events": [
+            {
+              "t": 1.7500000000000009,
+              "e": "Liftoff",
+              "note": ""
+            },
+            {
+              "t": 18.200000000000124,
+              "e": "Gravity turn",
+              "note": "55 m/s"
+            },
+            {
+              "t": 100.14999999999645,
+              "e": "Booster separation",
+              "note": ""
+            },
+            {
+              "t": 243.70000000002116,
+              "e": "Stage separation",
+              "note": ""
+            },
+            {
+              "t": 276.0000000000285,
+              "e": "Fairing jettison",
+              "note": "110 km"
+            },
+            {
+              "t": 451.1500000000683,
+              "e": "Orbit insertion",
+              "note": "140 × 183 km"
+            }
+          ],
+          "auto": true,
+          "t": 451.1500000000683
+        },
+        "outcome": {
+          "ok": true,
+          "phase": "done",
+          "title": "In orbit at Jupiter",
+          "why": "The spacecraft is in its planned orbit around Jupiter after 2.4 years of flight, with 0.64 km/s still in the tank."
+        },
+        "landing": null,
+        "t": 12219.448193372957,
+        "capture": {
+          "result": "orbit",
+          "tb": 2.6069803543778107,
+          "tau": 1303.490177202879,
+          "need": 0.5829377938439606,
+          "best": 0.5829374994576639,
+          "have": 1.225332253532877
+        }
+      },
+      "passed": true
+    },
+    {
+      "mission": "jupiter",
+      "name": "source",
+      "startedAt": "2026-11-15T06:51:41.850Z",
+      "events": [
+        {
+          "screen": "gonogo",
+          "elapsedSeconds": 1.27
+        },
+        {
+          "screen": "launch",
+          "elapsedSeconds": 12.39
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 88.43
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "tcm",
+          "miss": 382628.68454532925,
+          "need": 0.026255191556171658
+        },
+        {
+          "action": "correction-window",
+          "leg": 0,
+          "type": "enc",
+          "miss": 1398.9546143215528,
+          "need": 0.001216616125814952
+        },
+        {
+          "screen": "flyby",
+          "elapsedSeconds": 101.61
+        },
+        {
+          "action": "aim-planned-flyby"
+        },
+        {
+          "screen": "cruise",
+          "elapsedSeconds": 112.45
+        },
+        {
+          "action": "correction-window",
+          "leg": 1,
+          "type": "enc",
+          "miss": 0.0003851691685219721,
+          "need": 3.045302673460702e-11
+        },
+        {
+          "screen": "arrival",
+          "elapsedSeconds": 180.27
+        },
+        {
+          "action": "capture-burn",
+          "position": 0.500191666666664
+        },
+        {
+          "screen": "report",
+          "elapsedSeconds": 188.47
+        }
+      ],
+      "errors": [],
+      "finishedAt": "2026-11-15T06:54:50.419Z",
+      "elapsedSeconds": 188.569,
+      "result": {
+        "mission": "jupiter",
+        "rt": {
+          "ok": true,
+          "chain": [
+            "earth",
+            "mars",
+            "jupiter"
+          ],
+          "t0": 11347,
+          "tofs": [
+            110.7477757671918,
+            761.700417605766
+          ],
+          "legs": [
+            {
+              "from": "earth",
+              "to": "mars",
+              "t0": 11347,
+              "tof": 110.7477757671918,
+              "r0": [
+                -0.562900114220869,
+                0.8076622427237008,
+                -0.000056912334045482126
+              ],
+              "frame": "helio",
+              "res": false,
+              "v0": [
+                -0.01671147430411947,
+                -0.013938826357094418,
+                0.000002595176786968551
+              ],
+              "v1": [
+                0.005165251107838984,
+                -0.015062471594503758,
+                0.0000013868664462403086
+              ],
+              "rEnd": [
+                -1.0136510247351513,
+                -1.176187540653146,
+                0.0001947854426413606
+              ]
+            },
+            {
+              "from": "mars",
+              "to": "jupiter",
+              "t0": 11457.747775767191,
+              "tof": 761.700417605766,
+              "r0": [
+                -1.013651024735205,
+                -1.1761875406529931,
+                0.0001947854426413466
+              ],
+              "frame": "helio",
+              "res": false,
+              "v0": [
+                0.005947442673039076,
+                -0.015818871800512797,
+                -0.00023904076521503014
+              ],
+              "v1": [
+                0.003481447019628268,
+                0.003163157750255829,
+                -0.000009847044862848487
+              ],
+              "rEnd": [
+                4.149668053059004,
+                -2.8448139129102814,
+                -0.0810029298893549
+              ]
+            }
+          ],
+          "flybys": [
+            {
+              "rp": 3596.2,
+              "rpMin": 3596.2,
+              "delta": 0.11819727320216789,
+              "dMax": 0.0866778685546987,
+              "vi": 16.10266539229207,
+              "vo": 16.332480275710346,
+              "dv": 0.5773651640679806,
+              "naturalTurn": 0.0866778685546987,
+              "poweredTurn": 0.03151940464746919,
+              "free": false,
+              "body": "mars",
+              "t": 11457.747775767191,
+              "vin": [
+                -10.319264477928073,
+                -12.338035165284003,
+                0.7625625422927598
+              ],
+              "vout": [
+                -8.964933544670737,
+                -13.647709473339484,
+                0.34627247569588526
+              ],
+              "vPlanet": [
+                19.26267382241335,
+                -13.741984256209003,
+                -0.7601612429026807
+              ],
+              "gain": 1.6936309977124857
+            }
+          ],
+          "vinfDep": 8.05904887070477,
+          "vinfDepVec": [
+            -4.0117311087152485,
+            -6.98958306471089,
+            0.0032853129055422157
+          ],
+          "c3": 64.94826870040782,
+          "dvDep": 5.858968464282494,
+          "dvFly": 0.5773651640679806,
+          "vinfArr": 6.040583933384564,
+          "vinfArrVec": [
+            -1.1989105214195046,
+            -5.9172938052946185,
+            0.1920985156508884
+          ],
+          "dvCap": 0.5829374994576639,
+          "dvTotal": 7.019271127808139,
+          "days": 872.4481933729567,
+          "years": 2.388632972958129,
+          "frame": "helio",
+          "cost": 7.258134425103952
+        },
+        "dry": 633,
+        "prop": 143.00827526218575,
+        "prop0": 500,
+        "pts": 40,
+        "hasProbe": false,
+        "cost": {
+          "rocket": 284,
+          "craft": 121,
+          "ops": 14.331797837748773,
+          "total": 419.33179783774875
+        },
+        "rocket": {
+          "segs": 5,
+          "engines": 4,
+          "boosters": 2,
+          "upper": "L",
+          "fairing": "S"
+        },
+        "craft": {
+          "bus": "S",
+          "power": "solar",
+          "powerN": 2,
+          "antenna": "M",
+          "instruments": [
+            "mag",
+            "spec"
+          ],
+          "tank": 1
+        },
+        "burns": [
+          {
+            "t": 11347,
+            "label": "Departure burn (upper stage)",
+            "dv": 5.858968464282494,
+            "free": true
+          },
+          {
+            "t": 11444.458042675129,
+            "label": "Course corrections, Earth → Mars",
+            "dv": 0.02722562883103373
+          },
+          {
+            "t": 11457.747775767191,
+            "label": "Powered flyby at Mars",
+            "dv": 0.5773651640679806
+          },
+          {
+            "t": 11457.747775767191,
+            "label": "Mars gravity-only speed gain +1.17 km/s",
+            "dv": 0,
+            "free": true,
+            "gain": 1.166611083953022
+          },
+          {
+            "t": 12219.448193372957,
+            "label": "Capture burn at Jupiter",
+            "dv": 0.5830685094435495
+          }
+        ],
+        "notes": [],
+        "used": {
+          "tcm": 0.02722562883103373,
+          "fly": 0.5773651640679806,
+          "cap": 0.5830685094435495
+        },
+        "gains": [
+          {
+            "body": "mars",
+            "gain": 1.6936309977124715,
+            "rp": 3596.2,
+            "turn": 0.11819727320216789,
+            "fix": 1.9708335031049848e-14,
+            "required": 0.5773651640679806,
+            "applied": 0.5773651640679806,
+            "extra": 0
+          }
+        ],
+        "launch": {
+          "status": "orbit",
+          "dvLeft": 6.014384420747328,
+          "need": 5.858968464282494,
+          "kickV": 55.07688529613581,
+          "band": [
+            55,
+            80
+          ],
+          "maxQ": 30181.75339270222,
+          "events": [
+            {
+              "t": 1.7500000000000009,
+              "e": "Liftoff",
+              "note": ""
+            },
+            {
+              "t": 18.200000000000124,
+              "e": "Gravity turn",
+              "note": "55 m/s"
+            },
+            {
+              "t": 100.14999999999645,
+              "e": "Booster separation",
+              "note": ""
+            },
+            {
+              "t": 243.70000000002116,
+              "e": "Stage separation",
+              "note": ""
+            },
+            {
+              "t": 276.0000000000285,
+              "e": "Fairing jettison",
+              "note": "110 km"
+            },
+            {
+              "t": 451.1500000000683,
+              "e": "Orbit insertion",
+              "note": "140 × 183 km"
+            }
+          ],
+          "auto": true,
+          "t": 451.1500000000683
+        },
+        "outcome": {
+          "ok": true,
+          "phase": "done",
+          "title": "In orbit at Jupiter",
+          "why": "The spacecraft is in its planned orbit around Jupiter after 2.4 years of flight, with 0.64 km/s still in the tank."
+        },
+        "landing": null,
+        "t": 12219.448193372957,
+        "capture": {
+          "result": "orbit",
+          "tb": 55.00728547791368,
+          "tau": 1303.490177202879,
+          "need": 0.5830685094435495,
+          "best": 0.5829374994576639,
+          "have": 1.2222824692098355
+        }
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

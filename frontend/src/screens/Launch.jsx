@@ -1,0 +1,2 @@
+// Original DOM shell. Existing controllers own its live DOM/telemetry.
+export default function Launch(){return (<section className="screen" id="s-launch">{"\n    "}<div className="side-tele" id="lTele"></div>{"\n    "}<div id="lCall"><b></b><span></span></div>{"\n    "}<div id="lPrompt" className="pe"></div>{"\n    "}<div id="lCorner" className="pe"><button className="pill" id="lAuto">{"Autopilot off"}</button></div>{"\n  "}</section>);}

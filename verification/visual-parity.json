@@ -1,0 +1,562 @@
+{
+  "browser": "157.0.8103.51",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "mode": "Fixed animation frames for screenshots only; original source file is served unchanged.",
+  "screens": [
+    {
+      "name": "landing-hero",
+      "elements": [
+        38,
+        38
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-problem",
+      "elements": [
+        34,
+        34
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-theories",
+      "elements": [
+        48,
+        48
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "two-minds-einstein",
+      "elements": [
+        47,
+        47
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "einstein-maths",
+      "elements": [
+        47,
+        47
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-assist",
+      "elements": [
+        32,
+        32
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-missions",
+      "elements": [
+        90,
+        90
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-science",
+      "elements": [
+        39,
+        39
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-validation",
+      "elements": [
+        48,
+        48
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-sources",
+      "elements": [
+        53,
+        53
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-class",
+      "elements": [
+        26,
+        26
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0.03451388888888889,
+        "meanError": 0.01518125,
+        "maximumChannelDifference": 49
+      },
+      "expectedMotion": true,
+      "passed": true
+    },
+    {
+      "name": "landing-sec-how",
+      "elements": [
+        32,
+        32
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "select",
+      "elements": [
+        89,
+        89
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0.000004861111111111111,
+        "maximumChannelDifference": 1
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "tutorial",
+      "elements": [
+        110,
+        110
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "builder",
+      "elements": [
+        105,
+        105
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "builder-exploded",
+      "elements": [
+        105,
+        105
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "builder-xray",
+      "elements": [
+        105,
+        105
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "craft",
+      "elements": [
+        111,
+        111
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "craft-science",
+      "elements": [
+        111,
+        111
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "route",
+      "elements": [
+        42,
+        42
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "route-details",
+      "elements": [
+        67,
+        67
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "physics-insights",
+      "elements": [
+        85,
+        85
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "pass-device",
+      "elements": [
+        116,
+        116
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "gonogo",
+      "elements": [
+        55,
+        55
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "launch",
+      "elements": [
+        58,
+        58
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 1.0730555555555557,
+        "meanError": 0.8345256944444445,
+        "maximumChannelDifference": 204
+      },
+      "expectedMotion": true,
+      "passed": true
+    },
+    {
+      "name": "cruise",
+      "elements": [
+        69,
+        69
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "cruise-approach",
+      "elements": [
+        66,
+        66
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "arrival",
+      "elements": [
+        57,
+        57
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "arrival-captured",
+      "elements": [
+        51,
+        51
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "descent",
+      "elements": [
+        44,
+        44
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "report",
+      "elements": [
+        147,
+        147
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "validation-sources",
+      "elements": [
+        210,
+        210
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "validation-sources-bottom",
+      "elements": [
+        210,
+        210
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "jupiter-route",
+      "elements": [
+        92,
+        92
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0.000002777777777777778,
+        "maximumChannelDifference": 1
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "flyby",
+      "elements": [
+        68,
+        68
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    },
+    {
+      "name": "flyby-on-plan",
+      "elements": [
+        68,
+        68
+      ],
+      "differences": [],
+      "pixels": {
+        "differentPercent": 0,
+        "meanError": 0,
+        "maximumChannelDifference": 0
+      },
+      "expectedMotion": false,
+      "passed": true
+    }
+  ],
+  "errors": [
+    {
+      "name": "source",
+      "errors": []
+    },
+    {
+      "name": "react",
+      "errors": []
+    }
+  ],
+  "byteIdenticalPairs": 32,
+  "passed": true
+}

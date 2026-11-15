@@ -1,0 +1,21 @@
+{
+  "step": 1,
+  "passed": true,
+  "style": {
+    "font": "Fraunces, serif",
+    "bg": "rgb(20, 27, 58)",
+    "fg": "rgb(251, 246, 236)"
+  },
+  "errors": [],
+  "failedRequests": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=JetBrains+Mono:wght@200;300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=JetBrains+Mono:wght@200;300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap",
+      "reason": "net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ],
+  "limitation": "Font downloads require network. This verifies the scaffold only, not game parity."
+}

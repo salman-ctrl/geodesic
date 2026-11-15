@@ -1,0 +1,2 @@
+// Original DOM shell. Existing controllers own its live DOM/telemetry.
+export default function PhysicsInsights(){return (<aside id="physicsDock" hidden={true} aria-label="Physics insights for this mission stage">{"\n    "}<button id="physicsToggle" type="button" aria-controls="physicsPanel" aria-expanded="false"><span aria-hidden="true">{"Σ"}</span>{" PHYSICS INSIGHTS "}<span aria-hidden="true">{"⌄"}</span></button>{"\n    "}<div id="physicsPanel" hidden={true}><div id="physicsContent"></div></div>{"\n  "}</aside>);}

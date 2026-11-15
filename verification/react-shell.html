@@ -1,0 +1,333 @@
+
+
+<canvas id="gl"></canvas>
+<div id="labels"></div>
+
+
+<div id="landing">
+  <header id="hero">
+    <div id="heroOrbitZone" role="group" tabindex="0" aria-label="Interactive 3D rocket. Drag to rotate the view, or use arrow keys to orbit. Press Home to reset.">
+      <div class="orbit-help" aria-hidden="true">
+        <span class="orbit-glyph"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"><ellipse cx="16" cy="16" rx="12" ry="5.5" transform="rotate(-28 16 16)"></ellipse><path d="M25 7l.5 4.8-4.8-.7"></path><circle cx="16" cy="16" r="3" fill="currentColor" stroke="none"></circle><path d="M16 3v4M16 25v4" opacity=".7"></path></svg></span>
+        <span><strong>Interactive rocket</strong><small>Drag to orbit · Move to explore</small></span>
+      </div>
+    </div>
+    <div id="lnav">
+      <span class="wm font-display" style="font-weight:900;letter-spacing:.14em;font-size:17px"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--flame);margin-right:9px"></i>GEODESIC</span>
+      <nav>
+        <a class="link" href="#sec-theories">Newton × Einstein</a>
+        <a class="link" href="#sec-assist">Gravity assist</a>
+        <a class="link" href="#sec-missions">Missions</a>
+        <a class="link" href="#sec-validation">Validation</a>
+        <a class="link" href="#sec-sources">Sources</a>
+        <a class="link" href="#sec-class">Play in class</a>
+      </nav>
+    </div>
+    <div class="copy">
+      <div class="kicker" style="color:rgba(251,246,236,.6)">NASA Space Apps Challenge 2026 · Space Mission Design Game</div>
+      <h1 id="heroTitle" aria-label="Geodesic"></h1>
+      <div class="tag">Build your own rocket and mission</div>
+      <div class="cta">
+        <button class="btn" data-start="">Start mission <span>→</span></button>
+        <button class="link" id="heroContinue" style="display:none;color:rgba(251,246,236,.7)">Continue saved design</button>
+      </div>
+    </div>
+    <div class="hint">Scroll<i></i></div>
+  </header>
+
+  
+  <section class="lsec" id="sec-problem"><div class="wrap two">
+    <div>
+      <div class="kicker">01 · The problem</div>
+      <h2>You are told how a slingshot works. You never get to <em>miss the planet.</em></h2>
+      <p class="lead">For most students, and especially here in Indonesia, space mission engineering lives in textbooks and videos. The material explains. It never lets you try, fail and find out why.</p>
+      <p class="lead"><b>Geodesic lets anyone design a real mission in the browser.</b> No install, no account. It runs the same methods NASA mission designers use, on real JPL planet positions.</p>
+    </div>
+    <div class="who">
+      <div class="kicker" style="margin-bottom:10px">Who it is for</div>
+      <div class="tl"><span class="k">High-school students</span><span class="d"></span><span class="v">first orbit</span></div>
+      <div class="tl"><span class="k">Early university</span><span class="d"></span><span class="v">real ΔV budgets</span></div>
+      <div class="tl"><span class="k">Teachers</span><span class="d"></span><span class="v">one class, one mission</span></div>
+      <div class="tl"><span class="k">Needs</span><span class="d"></span><span class="v">a browser</span></div>
+    </div>
+  </div></section>
+
+
+  
+  <section class="lsec theory-section" id="sec-theories" aria-labelledby="theoryHeading"><div class="wrap">
+    <div class="theory-intro">
+      <div class="theory-eyebrow">02 · Interactive physics laboratory</div>
+      <h2 id="theoryHeading">Two minds. <em>One universe.</em></h2>
+      <p>Why does a spacecraft turn near a planet? Newton calculates the motion. Einstein reveals something deeper about space and time. Switch theories, move the sliders, and explore the mathematics yourself.</p>
+    </div>
+    <div class="theory-tabs" role="tablist" aria-label="Gravity theory">
+      <button type="button" class="theory-tab" data-theory-tab="newton" role="tab" id="newtonTab" aria-controls="theoryPanel" aria-selected="true" tabindex="0">01 / Isaac Newton</button>
+      <button type="button" class="theory-tab" data-theory-tab="einstein" role="tab" id="einsteinTab" aria-controls="theoryPanel" aria-selected="false" tabindex="-1">02 / Albert Einstein</button>
+    </div>
+    <div class="theory-grid" id="theoryPanel" role="tabpanel" aria-labelledby="newtonTab">
+      <div class="theory-copy" aria-live="polite">
+        <div class="theory-eyebrow" id="theoryEyebrow">Classical mechanics · 1687</div>
+        <h3 id="theoryTitle">Gravity is a force.</h3>
+        <p id="theoryDescription">Every mass attracts every other mass. Move a spacecraft farther away, change its speed, and watch gravity reshape its orbit. The path below is calculated with the same two-body Kepler propagator used by the mission engine.</p>
+        <div class="theory-mathcard">
+          <div class="theory-eyebrow" id="theoryMetricName">Gravitational acceleration</div>
+          <div class="theory-figure" id="theoryMetric" aria-live="off">—</div>
+          <div class="theory-formula" id="theoryFormula">a = GM / r²</div>
+          <small id="theoryFormulaCaption">Live acceleration at the spacecraft’s current position along the orbit.</small>
+        </div>
+        <div class="theory-controls">
+          <div class="theory-controlset" data-theory-controls="newton">
+            <div class="theory-slider-row"><label for="nMass">Planet mass <output id="nMassOut">1.0 × Earth</output></label><input id="nMass" type="range" min="0.4" max="4" step="0.1" value="1"/></div>
+            <div class="theory-slider-row"><label for="nDistance">Starting distance from centre <output id="nDistanceOut">2.8 R⊕</output></label><input id="nDistance" type="range" min="1.4" max="5.2" step="0.1" value="2.8"/></div>
+            <div class="theory-slider-row"><label for="nVelocity">Tangential launch speed <output id="nVelocityOut">1.05 × circular</output></label><input id="nVelocity" type="range" min="0.65" max="1.55" step="0.01" value="1.05"/></div>
+          </div>
+          <div class="theory-controlset" data-theory-controls="einstein" hidden="">
+            <div class="theory-slider-row"><label for="eMass">Planet mass <output id="eMassOut">1.0 × Earth</output></label><input id="eMass" type="range" min="0.4" max="5" step="0.1" value="1"/></div>
+            <div class="theory-slider-row"><label for="eDistance">Near clock: distance from centre <output id="eDistanceOut">1.5 R⊕</output></label><input id="eDistance" type="range" min="1.2" max="6" step="0.1" value="1.5"/></div>
+            <div class="theory-eyebrow" style="font-size:9px;color:rgba(251,246,236,.56);line-height:1.7">Reference clock fixed at 12 R⊕. Both clocks are stationary in an idealised Schwarzschild gravitational field.</div>
+          </div>
+          <div class="theory-tools">
+            <button type="button" class="theory-btn primary" id="theoryPlay" aria-pressed="false">Ⅱ Pause motion</button>
+            <button type="button" class="theory-btn" id="theoryReset">↺ Reset experiment</button>
+            <button type="button" class="theory-btn" id="theoryView">◎ Reset view</button>
+          </div>
+          <details class="theory-details" id="theoryMath">
+            <summary>Explore the maths</summary>
+            <div id="theoryDerivation">
+              <p>Newton&#x27;s gravitational force F = GMm / r². Dividing by spacecraft mass m gives gravitational acceleration:</p>
+              <div class="deriv">a = GM / r² = μ / r²</div>
+              <p>For a circular orbit the speed is v = √(GM / r). For other speeds, the Kepler propagator calculates an elliptical or escaping path. Below the surface, the craft impacts the planet.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div class="theory-stage" id="theoryStage">
+        <canvas id="theoryCanvas" role="application" tabindex="0" aria-label="Interactive 3D science model. Drag or use arrow keys to rotate, scroll to zoom. Use adjacent sliders to change physical parameters."></canvas>
+        <div class="theory-stage-top"><div class="theory-live"><span class="theory-led"></span><span id="theoryLiveLabel">Live orbit simulation</span></div><span id="theoryFrameLabel">Newtonian · 2-body</span></div>
+        <div class="theory-clockhud" id="theoryClockHud" hidden="">
+          <div><span>Near clock · slower</span><b id="clockNear">—</b></div>
+          <div><span>Far clock · reference</span><b id="clockFar">—</b></div>
+        </div>
+        <div class="theory-stage-bottom"><div class="theory-state"><strong id="theoryStateTitle">Bound orbit</strong><span id="theoryStateDetail">Drag the scene to inspect the orbit from any angle.</span></div><span class="theory-gesture">↔ Drag to orbit · scroll to zoom</span></div>
+      </div>
+    </div>
+    <p class="theory-note" id="theoryDisclaimer">Scientific scope: the Newton view calculates ideal two-body trajectories with Kepler propagation. The Einstein view computes gravitational time dilation for stationary clocks in an ideal spherical, non-rotating gravitational field; the curved grid and gravity-vector arrows are schematic, with spatial deformation and clock-hand animation intentionally exaggerated. Neither demonstration is a full relativistic N-body flight simulator.</p>
+  </div></section>
+
+  
+  <section class="lsec alt" id="sec-assist"><div class="wrap two">
+    <canvas id="gaDiagram" width="800" height="640"></canvas>
+    <div>
+      <div class="kicker">03 · The core idea</div>
+      <h2>A gravity assist is <em>borrowed speed.</em></h2>
+      <p class="lead">A spacecraft falls toward a moving planet, swings behind it and leaves in a new direction. Seen from the planet, it leaves exactly as fast as it arrived.</p>
+      <p class="lead"><b>Seen from the Sun, it has taken a little of the planet&#x27;s orbital speed with it.</b> No propellant burned. The planet slows by an amount too small to ever measure.</p>
+      <div style="max-width:340px;margin-top:22px">
+        <div class="tl"><span class="k">Speed in, Sun frame</span><span class="d"></span><span class="v" id="gaIn">—</span><span class="u">km/s</span></div>
+        <div class="tl good"><span class="k">Speed out, Sun frame</span><span class="d"></span><span class="v" id="gaOut">—</span><span class="u">km/s</span></div>
+        <div class="tl"><span class="k">Propellant used</span><span class="d"></span><span class="v">0</span><span class="u">kg</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  
+  <section class="lsec" id="sec-missions"><div class="wrap">
+    <div class="kicker">04 · The missions</div>
+    <h2>Five destinations. Each one teaches <em>one hard thing.</em></h2>
+    <div id="missionRows"></div>
+  </div></section>
+
+  
+  <section class="lsec alt" id="sec-science"><div class="wrap">
+    <div class="kicker">05 · The real science, in plain language</div>
+    <h2>Three methods power the flight engine.</h2>
+    <div class="sci">
+      <div><div class="f">Δv = Isp · g₀ · ln(m₀ / m₁)</div><h3>The rocket equation</h3><p>How much speed your propellant can buy. The catch is the logarithm: every extra kilogram on top needs many more underneath. This is why rockets drop stages, and why saving speed with a flyby matters so much.</p></div>
+      <div><div class="f">v² = μ (2/r − 1/a)</div><h3>Vis-viva</h3><p>How fast you travel at any point of any orbit. It prices every burn in the game: leaving Earth, braking at Mars, and why burning deep in a gravity well gives more for less.</p></div>
+      <div><div class="f">r₁, r₂, Δt → orbit</div><h3>Patched conics + Lambert</h3><p>Near a planet, only that planet pulls. Far away, only the Sun. Stitch the pieces and you have a trajectory. Lambert&#x27;s problem finds the arc that joins two planets in a given travel time.</p></div>
+    </div>
+  </div></section>
+
+  
+  <section class="lsec dark" id="sec-validation"><div class="wrap">
+    <div class="kicker">06 · Validation</div>
+    <h2>Our engine against <em>missions that flew.</em></h2>
+    <p class="lead">We feed the real launch and encounter dates into the same solver the game uses, and compare what comes out with the flight record. These numbers are computed in your browser right now.</p>
+    <div data-validation=""></div>
+  </div></section>
+
+  
+  <section class="lsec" id="sec-sources"><div class="wrap">
+    <div class="kicker">07 · NASA / JPL data sources</div>
+    <h2>What is real, and what is a <em>game model.</em></h2>
+    <div class="src" data-sources=""></div>
+  </div></section>
+
+  
+  <section class="lsec alt" id="sec-class"><div class="wrap">
+    <div class="kicker">08 · Play in class</div>
+    <h2>One mission. One room code. <em>Thirty engineers.</em></h2>
+    <p class="lead">The teacher opens a mission on the projector. Teams join from their own devices and each takes a console: Propulsion, Power &amp; Comms, Science, Route. The class launches only when every console calls GO.</p>
+    <div class="classmock" style="margin-top:34px">
+      <div class="cm-card">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span class="kicker">Teacher screen · room code</span><span class="mock-tag">Mockup UI</span></div>
+        <div class="cm-code" id="cmCode">ORBIT-4821</div>
+        <div id="cmTeams"></div>
+        <div style="display:flex;gap:14px;align-items:center;margin-top:20px"><button class="btn sm teal" id="cmNew">New room code</button><span class="kicker" id="cmCount">0 teams joined</span></div>
+      </div>
+      <div class="cm-card cm-phone">
+        <span class="kicker">Student device</span>
+        <input id="cmInput" maxLength="10" placeholder="ROOM CODE" autoComplete="off"/>
+        <button class="btn sm" id="cmJoin" style="width:100%;justify-content:center">Join mission</button>
+        <p id="cmMsg" style="font-size:12.5px;color:var(--ink-soft);margin:14px 0 0;min-height:2.6em">Type the code from the projector.</p>
+      </div>
+    </div>
+  </div></section>
+
+  
+  <section class="lsec dark" id="sec-how"><div class="wrap">
+    <div class="kicker">09 · How the game works</div>
+    <h2>Design it. Poll the room. <em>Fly it yourself.</em></h2>
+    <div class="how">
+      <div><b>Pick a mission</b>Moon to Neptune, alone or as a crew of up to four on one device.</div>
+      <div><b>Build the rocket</b>Tanks, engines, boosters, upper stage, fairing. Watch ΔV and thrust-to-weight move.</div>
+      <div><b>Build the spacecraft</b>Power for where you are going, an antenna to phone home, instruments for the science.</div>
+      <div><b>Plan the route</b>Click planets to chain flybys on real positions. See the propellant you save.</div>
+      <div><b>Go / No-Go, then fly</b>Start the gravity turn, stage, correct course, aim each flyby, time the capture burn.</div>
+      <div><b>Read the report</b>What you spent, what the slingshots gave you, what went wrong, and your mission patch.</div>
+    </div>
+    <button class="btn" data-start="">Start mission <span>→</span></button>
+  </div></section>
+  <footer class="lfoot"><span>Geodesic · mockup build · NASA Space Apps Challenge 2026</span><span>Not affiliated with or endorsed by NASA</span></footer>
+</div>
+
+
+<div id="ui">
+  <div id="topbar" style="display:none">
+    <button class="wm" id="wmHome"><i></i>GEODESIC</button>
+    <div class="right">
+      <span class="kicker" id="tbMission"></span>
+      <div id="steps"></div>
+      <button class="link" id="tbSound">Sound on</button>
+    </div>
+  </div>
+    
+  <section class="screen" id="s-select">
+    <div class="hud-title"><div class="kicker">Step 1 · Mission select</div><h2>Where are we going?</h2><p><button class="link" id="selTut">Play the 60-second tutorial</button></p></div>
+    <div class="cols" id="mCols"></div>
+    <div class="crew pe"><span class="kicker">Crew</span><div class="chips" id="crewChips"></div><span class="kicker" id="crewRoles" style="min-width:250px"></span><button class="btn" id="selGo">Build the rocket <span>→</span></button></div>
+  </section>
+
+  
+  <section class="screen" id="s-builder">
+    <div class="hud-title"><div class="kicker" id="bKick">Step 2 · Rocket builder</div><h2>Build the rocket</h2><p>Drag to rotate, scroll to zoom. Click the rocket to take it apart.</p></div>
+    <div class="side-tele" id="bTele" style="left:calc(50% + 21vw)"></div>
+    <div class="viewbar"><button class="pill" id="bExplode">Exploded view</button><button class="pill" id="bXray">X-ray cutaway</button></div>
+    <div class="tray" id="bTray"></div>
+  </section>
+
+  
+  <section class="screen" id="s-craft">
+    <div class="hud-title"><div class="kicker" id="cKick">Step 3 · Spacecraft builder</div><h2>Build the spacecraft</h2><p id="cHint">Power for where you are going, a dish to phone home, instruments for the science.</p></div>
+    <div class="side-tele" id="cTele" style="left:calc(50% + 23vw)"></div>
+    <div class="viewbar"><button class="pill" id="cExplode">Exploded view</button><button class="pill" id="cBack">← Rocket</button></div>
+    <div class="tray" id="cTray"></div>
+  </section>
+  
+  <section class="screen" id="s-route">
+    <div class="hud-title"><div class="kicker" id="rKick">Step 4 · Route planner</div><h2>Plan the route</h2><p id="rHint">Click a planet to add a flyby. Slide the launch date to find a window.</p></div>
+    <div id="rCenter">
+      <div class="kicker" id="rCap">Propellant saved vs direct route</div>
+      <div class="bignum" id="rBigWrap"><span id="rBig">—</span><small>%</small></div>
+      <div class="rsub" id="rSub"> </div>
+      <div id="rChain"></div>
+    </div>
+    <div class="side-tele" id="rDetails" data-dock-avoid="when-on"></div>
+    <div id="rBar" class="pe">
+      <div class="rdate">
+        <div class="rdate-top"><span class="kicker" id="rSlLabel">Launch date</span><b id="rDate">—</b><button class="link" id="rBest">Jump to best window</button></div>
+        <canvas id="rStrip" width="900" height="30"></canvas>
+        <input type="range" id="rSlider"/>
+      </div>
+      <div><div class="kicker" style="margin-bottom:8px">Priority</div><div class="chips" id="rPri"></div></div>
+      <button class="pill" id="rDet" style="margin-bottom:4px">Details</button>
+      <button class="btn" id="rGo">Go / No-Go <span>→</span></button>
+    </div>
+  </section>
+  
+  <section class="screen" id="s-gonogo">
+    <div id="gPoll">
+      <div class="kicker" id="gKick">Step 5 · Go / No-Go poll</div>
+      <h2>Flight director, poll the room.</h2>
+      <div id="gLines"></div>
+      <div id="gFoot" class="pe"></div>
+    </div>
+    <div id="gCount"></div>
+  </section>
+
+  
+  <section class="screen" id="s-launch">
+    <div class="side-tele" id="lTele"></div>
+    <div id="lCall"><b></b><span></span></div>
+    <div id="lPrompt" class="pe"></div>
+    <div id="lCorner" class="pe"><button class="pill" id="lAuto">Autopilot off</button></div>
+  </section>
+  
+  <section class="screen" id="s-cruise">
+    <div class="hud-title"><div class="kicker" id="kKick">Cruise</div><h2 id="kTitle">Earth → Mars</h2><p id="kHint"></p></div>
+    <div class="decision" id="kPause"><div class="kicker"><i></i>Cruise paused · your decision</div><b id="kPauseT"></b><p id="kPauseP"></p><div class="row" id="kPauseB"></div></div>
+    <div class="side-tele hud-bl" id="kTele"></div>
+    <div class="hud-bc pe" id="kBar"><div><div class="kicker" style="margin-bottom:8px">Time warp</div><div class="chips" id="kWarp"></div></div><button class="btn hold" id="kBurn">Hold to burn <kbd>B</kbd></button></div>
+  </section>
+
+  
+  <section class="screen" id="s-flyby">
+    <div class="hud-title"><div class="kicker" id="fKick">Flyby</div><h2 id="fTitle">Aim the flyby</h2><p id="fHint">Slide the closest approach. Closer bends your path more. Too close and you hit the atmosphere.</p></div>
+    <div class="side-tele" id="fTele" data-dock-avoid="" style="right:34px;left:auto;width:280px"></div>
+    <div class="bigcall" id="fBig"><b></b><span></span></div>
+    <div class="hud-bc pe" id="fAim">
+      <div class="top"><span class="kicker">Closest approach</span><span class="kicker" id="fClock"></span></div>
+      <div class="zones"><i class="crash" id="fCrash"></i><i class="plan" id="fPlan"></i></div>
+      <input type="range" id="fSlider" min="0" max="1000" step="1"/>
+      <div class="top" style="margin-top:6px"><span class="kicker">← closer · fine-tune with arrow keys · farther →</span><div style="display:flex;gap:10px;align-items:center"><button class="pill" id="fPlanAim">Use planned aim</button><button class="btn" id="fLock">Lock aim <kbd>Enter</kbd></button></div></div>
+    </div>
+  </section>
+  
+  <section class="screen" id="s-arrival">
+    <div class="hud-title"><div class="kicker" id="aKick">Arrival</div><h2 id="aTitle">Capture burn</h2><p>Brake at the lowest point of the pass, where the engine does the most work. Too early or too late costs more. Miss the window and you fly past.</p></div>
+    <div class="side-tele" id="aTele" data-dock-avoid="" style="right:34px;left:auto;width:290px"></div>
+    <div class="bigcall" id="aBig"><b></b><span></span></div>
+    <div class="hud-bc pe" id="aBarWrap">
+      <div class="top"><span class="kicker">Approaching</span><span class="kicker">Closest approach</span><span class="kicker">Leaving</span></div>
+      <div id="aTrack"></div>
+      <div style="display:flex;justify-content:center;margin-top:10px"><button class="btn" id="aFire">Ignite capture burn <kbd>Space</kbd></button></div>
+    </div>
+    <div class="hud-bc pe" id="aChoice" style="display:none"></div>
+  </section>
+
+  
+  <section class="screen" id="s-descent">
+    <div class="hud-title"><div class="kicker" id="dKick">Landing</div><h2 id="dTitle">Descent</h2><p>Hold the engine to slow down. Touch the ground slower than 3 m/s. The fuel is all you have.</p></div>
+    <div class="side-tele" id="dTele" style="left:calc(50% + 170px);width:240px"></div>
+    <div class="bigcall" id="dBig"><b></b><span></span></div>
+    <div class="hud-bc pe"><button class="btn hold" id="dFire">Hold to fire engine <kbd>Space</kbd></button><button class="pill" id="dAssist">Assisted off</button></div>
+  </section>
+
+  
+  <section class="screen" id="s-report"><div id="repScroll" class="pe"></div></section>
+
+  
+  <aside id="physicsDock" hidden="" aria-label="Physics insights for this mission stage">
+    <button id="physicsToggle" type="button" aria-controls="physicsPanel" aria-expanded="false"><span aria-hidden="true">Σ</span> PHYSICS INSIGHTS <span aria-hidden="true">⌄</span></button>
+    <div id="physicsPanel" hidden=""><div id="physicsContent"></div></div>
+  </aside>
+</div>
+<div id="fade"></div>
+
+<div id="pass"><div><div class="kicker" style="color:rgba(251,246,236,.6)">Pass the device to</div><h2 id="passRole">Propulsion</h2><div class="mono" id="passWho" style="letter-spacing:.2em;text-transform:uppercase;font-size:13px;margin-bottom:34px">Player 2</div><button class="btn" id="passOk">I have it</button></div></div>
+<div id="modal"><div class="card"><button class="link x" id="modalX">Close ×</button><div id="modalBody"></div></div></div>
+<div id="coach"><div class="prog"><i id="coachBar"></i></div><div class="kicker" id="coachStep">Tutorial</div><p id="coachText"></p><div class="row"><button class="link" id="coachSkip">Skip tutorial</button><button class="btn sm" id="coachGo" style="display:none">Start my mission →</button></div></div>
+<div id="coachRing"></div>
+
+<div id="geoCursor" aria-hidden="true"><span class="geo-ring"></span><span class="geo-tick h"></span><span class="geo-tick v"></span><span class="geo-dot"></span><span class="geo-label">NAVIGATE</span></div>
+

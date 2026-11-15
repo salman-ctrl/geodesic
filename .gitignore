@@ -1,0 +1,11 @@
+# Local credentials and configuration (keep .env.example tracked).
+backend/.env
+frontend/.env
+.env
+.env.local
+*.env.local
+
+# Installed dependencies and build/cache output.
+**/node_modules/
+frontend/dist/
+.npm-cache/

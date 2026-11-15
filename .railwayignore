@@ -1,0 +1,8 @@
+.npm-cache/
+**/node_modules/
+**/dist/
+**/.env
+**/.env.local
+verification/
+scripts/cache-index.json
+scripts/offline-packuments.json

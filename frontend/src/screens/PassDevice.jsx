@@ -1,0 +1,2 @@
+// Original DOM shell. Existing controllers own its live DOM/telemetry.
+export default function PassDevice(){return (<div id="pass"><div><div className="kicker" style={{"color": "rgba(251,246,236,.6)"}}>{"Pass the device to"}</div><h2 id="passRole">{"Propulsion"}</h2><div className="mono" id="passWho" style={{"letterSpacing": ".2em", "textTransform": "uppercase", "fontSize": "13px", "marginBottom": "34px"}}>{"Player 2"}</div><button className="btn" id="passOk">{"I have it"}</button></div></div>);}

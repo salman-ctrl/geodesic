@@ -1,0 +1,2 @@
+// Original DOM shell. Existing controllers own its live DOM/telemetry.
+export default function GoNoGo(){return (<section className="screen" id="s-gonogo">{"\n    "}<div id="gPoll">{"\n      "}<div className="kicker" id="gKick">{"Step 5 · Go / No-Go poll"}</div>{"\n      "}<h2>{"Flight director, poll the room."}</h2>{"\n      "}<div id="gLines"></div>{"\n      "}<div id="gFoot" className="pe"></div>{"\n    "}</div>{"\n    "}<div id="gCount"></div>{"\n  "}</section>);}

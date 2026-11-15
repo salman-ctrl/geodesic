@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "All original DOM shells, attributes, text and styles; runtime disabled for this structural check only",
+  "components": 16
+}

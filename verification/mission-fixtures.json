@@ -1,0 +1,100 @@
+{
+  "moon": {
+    "mission": "moon",
+    "crew": 1,
+    "tutorialDone": true,
+    "sound": false,
+    "rocket": {
+      "segs": 3,
+      "engines": 3,
+      "boosters": 2,
+      "upper": "S",
+      "fairing": "S"
+    },
+    "craft": {
+      "bus": "S",
+      "power": "solar",
+      "powerN": 1,
+      "antenna": "S",
+      "instruments": [
+        "spec",
+        "probe"
+      ],
+      "tank": 1
+    },
+    "route": {
+      "flybys": [],
+      "day": 10226.5,
+      "priority": "balanced",
+      "moonTof": 4,
+      "auto": false
+    },
+    "last": null
+  },
+  "mars": {
+    "mission": "mars",
+    "crew": 1,
+    "tutorialDone": true,
+    "sound": false,
+    "rocket": {
+      "segs": 4,
+      "engines": 4,
+      "boosters": 2,
+      "upper": "M",
+      "fairing": "S"
+    },
+    "craft": {
+      "bus": "S",
+      "power": "solar",
+      "powerN": 1,
+      "antenna": "M",
+      "instruments": [
+        "radar",
+        "probe"
+      ],
+      "tank": 1
+    },
+    "route": {
+      "flybys": [],
+      "day": 15278.5,
+      "priority": "balanced",
+      "moonTof": 4,
+      "auto": false
+    },
+    "last": null
+  },
+  "jupiter": {
+    "mission": "jupiter",
+    "crew": 1,
+    "tutorialDone": true,
+    "sound": false,
+    "rocket": {
+      "segs": 5,
+      "engines": 4,
+      "boosters": 2,
+      "upper": "L",
+      "fairing": "S"
+    },
+    "craft": {
+      "bus": "S",
+      "power": "solar",
+      "powerN": 2,
+      "antenna": "M",
+      "instruments": [
+        "mag",
+        "spec"
+      ],
+      "tank": 1
+    },
+    "route": {
+      "flybys": [
+        "mars"
+      ],
+      "day": 11347,
+      "priority": "balanced",
+      "moonTof": 4,
+      "auto": false
+    },
+    "last": null
+  }
+}

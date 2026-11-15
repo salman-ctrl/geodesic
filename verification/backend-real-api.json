@@ -1,0 +1,197 @@
+{
+  "startedAt": "2026-11-15T07:26:00.868Z",
+  "database": "Real configured TiDB Cloud database",
+  "api": "http://127.0.0.1:3001",
+  "tls": {
+    "minVersion": "TLSv1.2",
+    "rejectUnauthorized": true,
+    "negotiatedVersion": "TLSv1.3",
+    "cipher": "TLS_AES_128_GCM_SHA256"
+  },
+  "checks": [
+    {
+      "method": "GET",
+      "route": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/:code/join",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/:code/join",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/:code/join",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=missionScore",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=fuelSaver",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=mostScience",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=cheapestSuccess",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=fastestArrival",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=bestFailureLesson",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "route": "/api/runs",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms",
+      "status": 400
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms",
+      "status": 400
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/:code/leaderboard?tab=constructor",
+      "status": 400
+    },
+    {
+      "method": "GET",
+      "route": "/api/rooms/A386Z2FD/leaderboard",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "route": "/api/rooms/A386Z2FD/join",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "route": "/api/nonexistent",
+      "status": 404
+    },
+    {
+      "method": "OPTIONS",
+      "route": "/api/rooms",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "route": "/api/health",
+      "status": 403
+    },
+    {
+      "method": "GET",
+      "route": "/api/health",
+      "status": 200
+    }
+  ],
+  "cleanup": {
+    "completed": true,
+    "runs": 5,
+    "teams": 2,
+    "rooms": 1
+  },
+  "health": {
+    "ok": true,
+    "db": true
+  },
+  "persistedScores": [
+    {
+      "successful": true,
+      "mission_score": 545
+    },
+    {
+      "successful": true,
+      "mission_score": 0
+    },
+    {
+      "successful": true,
+      "mission_score": 1000
+    },
+    {
+      "successful": true,
+      "mission_score": 745
+    },
+    {
+      "successful": false,
+      "mission_score": null
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-11-15T07:26:04.649Z"
+}

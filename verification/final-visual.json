@@ -1,0 +1,95 @@
+{
+  "browser": "157.0.8103.51",
+  "scope": "Final app after API/classroom integration; source served unchanged.",
+  "screens": [
+    {
+      "name": "hero",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "builder",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "craft",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "route",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "cruise",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "arrival",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "descent",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "report-top",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "report-addition",
+      "expectedAddition": true,
+      "differentPercent": 9.720972222222223,
+      "maximumChannelDifference": 231
+    },
+    {
+      "name": "sources-modal",
+      "expectedAddition": false,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "sources-modal-addition",
+      "expectedAddition": true,
+      "differentPercent": 12.542291666666666,
+      "maximumChannelDifference": 220
+    },
+    {
+      "name": "sec-sources",
+      "expectedAddition": true,
+      "differentPercent": 0,
+      "maximumChannelDifference": 0
+    },
+    {
+      "name": "sec-class",
+      "expectedAddition": true,
+      "differentPercent": 28.69055555555556,
+      "maximumChannelDifference": 248
+    }
+  ],
+  "errors": [
+    {
+      "name": "source",
+      "errors": []
+    },
+    {
+      "name": "react",
+      "errors": []
+    }
+  ],
+  "passed": true
+}

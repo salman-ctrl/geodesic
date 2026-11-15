@@ -1,0 +1,2 @@
+// Original DOM shell. Existing controllers own its live DOM/telemetry.
+export default function Tutorial(){return (<div id="coach"><div className="prog"><i id="coachBar"></i></div><div className="kicker" id="coachStep">{"Tutorial"}</div><p id="coachText"></p><div className="row"><button className="link" id="coachSkip">{"Skip tutorial"}</button><button className="btn sm" id="coachGo" style={{"display": "none"}}>{"Start my mission →"}</button></div></div>);}

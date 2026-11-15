@@ -1,0 +1,14 @@
+{
+  "name": "geodesic-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js",
+    "test:integration": "node ../scripts/verify-real-api.mjs --real-database"
+  },
+  "dependencies": { "express": "5.3.0", "mysql2": "^3.14.0" }
+}
