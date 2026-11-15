@@ -110,9 +110,18 @@ We used AI coding assistants (Anthropic Claude and OpenAI Codex) to help write a
 
 ## Team
 
-`<Team name>` — NASA Space Apps Challenge 2026, Yogyakarta
-- `<Name>` — role
-- `<Name>` — role
+**GEODESIC** — NASA Space Apps Challenge 2026, Yogyakarta
+
+- **Geo** — *Team Lead & Science*
+  - **Coding:** Landing page & *"Two Minds. One Universe."* (Newton × Einstein interactive lab), contextual *Physics Insights* & *Physics Breakdown* in Mission Report, and NASA Validation Panel (*Voyager 2* & *New Horizons*).
+  - **Leadership & Science:** Project direction, task coordination, physics research & NASA/JPL data sourcing, README & *Use of AI* documentation, and final project submission.
+- **Salman** — *Tech Lead & 3D/Physics Engine*
+  - **Coding:** Core astrodynamics & physics engine (Lambert solver, patched conics, ascent & landing simulation), Three.js 3D scenes (rocket builder, X-Ray/exploded view, launchpad, planetary flyby), prototype migration to React + Vite, and deployment.
+  - **Architecture:** Technical architecture, code review & merge management, and AI coding workflow direction.
+- **Fadil** — *Backend & Classroom Systems*
+  - **Coding:** Express REST API (`/api/rooms`, `/api/teams`, `/api/runs`, `/api/leaderboard`), TiDB Cloud database integration (`schema.sql` & TLS connection), and classroom multiplayer features (room codes, team join flow, 6-tab leaderboard, and mission scoring).
+  - **QA & Media:** End-to-end playtesting, 30-second project demo video production, and submission assets.
+
 
 ## Disclaimer
 
