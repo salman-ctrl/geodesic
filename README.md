@@ -1,10 +1,10 @@
-# GEODESIC — Build your own rocket and mission
+# GEODESIC - Build your own rocket and mission
 
 > A browser game where you design a rocket, a spacecraft and a gravity-assist route, then fly it yourself, using real orbital mechanics and real NASA/JPL planet positions.
 
 **NASA Space Apps Challenge 2026 · Challenge: Space Mission Design Game**
 
-🔗 **Play:** `<https://geodesic-game.vercel.app/>`🎬 **Demo video:** `<https://youtu.be/ksskKUELBc8>`
+🔗 Play: <https://geodesic-game.vercel.app/> 🎬Demo video: <https://youtu.be/ksskKUELBc8>`
 
 ---
 
@@ -52,9 +52,9 @@ The game computes these values live in the browser, in the Validation section.
 ## Data and methods
 
 **Real data**
-- Planet positions: JPL Solar System Dynamics, *Approximate Positions of the Planets*, Table 1 — <https://ssd.jpl.nasa.gov/planets/approx_pos.html>
-- Planetary GM and radii: JPL SSD planetary physical parameters — <https://ssd.jpl.nasa.gov/planets/phys_par.html>
-- Pluto aim point (validation only): JPL Horizons.
+- Planet positions: JPL Solar System Dynamics, *Approximate Positions of the Planets*, Table 1 - <https://ssd.jpl.nasa.gov/planets/approx_pos.html>
+- Planetary GM and radii: JPL SSD planetary physical parameters - <https://ssd.jpl.nasa.gov/planets/phys_par.html>
+- Pluto aim point (validation only): JPL Horizons - <https://ssd.jpl.nasa.gov/horizons>
 
 **Real methods:** the rocket equation, vis-viva, patched conics, a universal-variable Lambert solver, and Kepler propagation.
 
