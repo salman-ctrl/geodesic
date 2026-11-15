@@ -112,10 +112,10 @@ We used AI coding assistants (Anthropic Claude and OpenAI Codex) to help write a
 
 **GEODESIC** NASA Space Apps Challenge 2026, Yogyakarta
 
-- **(Rafi Geovazi)** — *(Team Lead & Science)*
+- **Rafi Geovazi** *(Team Lead & Science)*
   - **Coding:** Landing page & *"Two Minds. One Universe."* (Newton × Einstein interactive lab), contextual *Physics Insights* & *Physics Breakdown* in Mission Report, and NASA Validation Panel (*Voyager 2* & *New Horizons*).
   - **Leadership & Science:** Project direction, task coordination, physics research & NASA/JPL data sourcing, README & *Use of AI* documentation, and final project submission.
-- **Salman Rizky** — *(Tech Lead & 3D/Physics Engine)*
+- **Salman Rizky** *(Tech Lead & 3D/Physics Engine)*
   - **Coding:** Core astrodynamics & physics engine (Lambert solver, patched conics, ascent & landing simulation), Three.js 3D scenes (rocket builder, X-Ray/exploded view, launchpad, planetary flyby), prototype migration to React + Vite, and deployment.
   - **Architecture:** Technical architecture, code review & merge management, and AI coding workflow direction.
 - **Muhammad Rifki Fadillah** *(Backend & Classroom Systems)*
